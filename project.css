@@ -1,0 +1,206 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Search Section */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#search-box {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-btn:hover {
+  background-color: #0b5ed7;
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Main Layout */
+.main-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 75%;
+}
+
+.cart-container {
+  width: 25%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+/* Drink Card */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h5 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card h6 {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.card button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.btn-add {
+    background-color: #198754;
+    color: white;
+}
+
+.btn-add:hover {
+    background-color: #157347;
+}
+
+.btn-details {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+.btn-details:hover {
+    background-color: #31d2f2;
+}
+
+/* Cart Items */
+.cart-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-info p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.cart-info .index {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+/* Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; 
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.modal-details strong {
+    color: #333;
+}
